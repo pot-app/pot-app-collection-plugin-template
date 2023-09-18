@@ -9,7 +9,7 @@ pub fn collection(
     needs: HashMap<String, String>,
 ) -> Result<Value, Box<dyn Error>> {
     let client = reqwest::blocking::ClientBuilder::new().build()?;
-    let mut port = match needs.get("port") {
+    let port = match needs.get("port") {
         Some(port) => port.to_string(),
         None => "8765".to_string(),
     };
