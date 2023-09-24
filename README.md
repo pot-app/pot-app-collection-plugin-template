@@ -32,6 +32,8 @@
 ```rust
     source: &str, // 原文
     target: &str, // 译文
+    from: &str, // 原文语言代码
+    to: &str, // 译文语言代码
     needs: HashMap<String, String>, // 插件需要的其他配置信息,由info.json定义
 ```
 
