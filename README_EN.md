@@ -32,6 +32,8 @@ Edit `src/lib.rs` to implement `collection` function
 ```rust
 source: &str, // source text
 target: &str, // target text
+from: &str, // source language code
+to: &str, // target language code
 needs: HashMap<String, String>, // Additional configuration information required by the plugin, defined by info.json
 ```
 
