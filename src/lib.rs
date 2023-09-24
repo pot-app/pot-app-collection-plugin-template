@@ -5,6 +5,8 @@ use std::error::Error;
 #[no_mangle]
 pub fn collection(
     source: &str,
+    target: &str,
+    from: &str,
     to: &str,
     needs: HashMap<String, String>,
 ) -> Result<Value, Box<dyn Error>> {
