@@ -30,7 +30,7 @@ mod tests {
     fn try_request() {
         let mut needs = HashMap::new();
         needs.insert("port".to_string(), "8765".to_string());
-        let result = collection("Hello", "你好", needs).unwrap();
+        let result = collection("Hello", "你好", "en", "zh_cn", needs).unwrap();
         println!("{result}");
     }
 }
